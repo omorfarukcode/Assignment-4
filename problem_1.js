@@ -5,8 +5,7 @@ function cubeNumber(number) {
     let cube;
     cube = number * number * number;
     return cube;
-  }
-  
+  } 
 }
 
 const result = cubeNumber(3);
