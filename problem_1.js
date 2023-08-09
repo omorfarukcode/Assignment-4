@@ -1,12 +1,11 @@
 function cubeNumber(number) {
-  if (typeof number !== "number" || number < 0) {
-    return "please provide a Number (Positive).";
+  if (typeof number !== "number") {
+    return "please provide a Number.";
   } else {
-    let cube;
+    let cube = 0;
     cube = number * number * number;
     return cube;
   }
 }
-
-// const result = cubeNumber(3);
-// console.log(result);
+const result = cubeNumber(4);
+console.log(result);

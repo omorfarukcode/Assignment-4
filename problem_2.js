@@ -4,10 +4,9 @@ function matchFinder(string1, string2) {
   } else {
     if (string1.includes(string2) || string2.includes(string1)) {
       return true;
-    } else {
-      return false;
     }
+    return false;
   }
 }
-// const result = matchFinder("JavaScript", "sript");
-// console.log(result);
+const result = matchFinder("John Doe","ohn");
+console.log(result);

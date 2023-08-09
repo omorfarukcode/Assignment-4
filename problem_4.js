@@ -13,7 +13,7 @@ const object = {
     house:"15A",
     society:"Earth Perfect"
 }
-// const result = findAddress(object);
-// console.log(result);
+const result = findAddress(object);
+console.log(result);
 
   

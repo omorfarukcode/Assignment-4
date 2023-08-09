@@ -2,17 +2,17 @@ function canPay(changeArray, totalDue) {
     if ( changeArray.length === 0 || !Array.isArray(changeArray) ){
         return "please provide array of number(Not Empty)"
     }else{
-        let totalMoney = 0;
+        let totalAmount = 0;
         for ( let i = 0 ; i < changeArray.length ; i++ ){
             let element = changeArray[i];
-            totalMoney = totalMoney + element   
+            totalAmount = totalAmount + element   
         }
-        if (totalMoney >= totalDue){
+        if (totalAmount >= totalDue){
             return true;
-        }else if(totalMoney < totalDue){
+        }else if(totalAmount < totalDue){
             return false;
         }
     } 
 }
-const result = canPay([],40);
+const result = canPay([1,5,5],10);
 console.log(result);
