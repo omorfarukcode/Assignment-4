@@ -1,4 +1,4 @@
-// Problem ---- 1
+
 function cubeNumber(number) {
   if (typeof number !== "number") {
     return "please provide a Number.";
@@ -9,7 +9,7 @@ function cubeNumber(number) {
   }
 }
 
-//   Problem ---- 2
+
 function matchFinder(string1, string2) {
   if (typeof string1 !== "string" || typeof string2 !== "string") {
     return "please provide a string.";
@@ -21,7 +21,7 @@ function matchFinder(string1, string2) {
   }
 }
 
-// Problem ---- 3
+
 function sortMaker(arr) {
   if (arr[0] < 0 || arr[1] < 0) {
     return "Invalid Input";
@@ -36,7 +36,7 @@ function sortMaker(arr) {
   }
 }
 
-// Problem ---- 4
+
 function findAddress(obj) {
   if (typeof obj !== "object") {
     return "please provide me an array of number";
@@ -44,11 +44,12 @@ function findAddress(obj) {
     const street = obj.street || "__";
     const house = obj.house || "__";
     const society = obj.society || "__";
-    return street + "," + house + "," + society;
+    let result = street + "," + house + "," + society;
+    return result;
   }
 }
 
-// Problem ---- 5
+
 function canPay(changeArray, totalDue) {
   if (changeArray.length === 0 || !Array.isArray(changeArray)) {
     return "please provide array of number(Not Empty)";
